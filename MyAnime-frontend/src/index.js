@@ -5,7 +5,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from "redux-devtools-extension";
 import rootReducer from "./redux/reducers";
 import './index.css';
-import Root from "./Root";
+import App from "./App";
 import * as serviceWorker from './serviceWorker';
 import logger from 'redux-logger'
 
@@ -17,7 +17,7 @@ const store = createStore(
 );
 
 ReactDOM.render(
-  <Root store={store} />,
+  <App store={store} />,
   document.getElementById("root")
 );
 
